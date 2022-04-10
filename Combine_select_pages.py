@@ -23,7 +23,8 @@ for file in filenames:
         pdfWriter.addPage(pageObj)
 
     pdfWriter.write(result_pdf)
+    # YOU HAVE TO WRITE BEFORE YOU CLOSE THE FILE,
+    # I MADE THE MISTAKE OF DOING THE OPPOSITE BEFORE, IT ADDED BLANK PAGES
     file1.close()
 
 result_pdf.close()
-
